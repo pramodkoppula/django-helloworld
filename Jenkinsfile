@@ -4,7 +4,7 @@ node {
         //customWorkspace '/var/www/JenkinsWorkspace'
     try {
         stage 'Checkout'
-            cd '/var/www/JenkinsWorkspace'
+            cd /var/www/JenkinsWorkspace
             checkout scm
 
             sh 'git log HEAD^..HEAD --pretty="%h %an - %s" > GIT_CHANGES'
