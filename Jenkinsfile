@@ -1,4 +1,4 @@
-agent {
+
 node {
         label 'my-defined-label'
         customWorkspace '/var/www/JenkinsWorkspace'
@@ -20,5 +20,4 @@ node {
         throw err
     }
 
-}
 }
