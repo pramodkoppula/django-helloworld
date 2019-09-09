@@ -1,13 +1,14 @@
 
 node {
         //label 'my-defined-label'
-        //customWorkspace '/var/www/JenkinsWorkspace'
+        label 'label'
+        customWorkspace '/var/www/JenkinsWorkspace'
     try {
         stage 'Checkout'
             
             //checkout scm
-            sh 'cd /var/www/JenkinsWorkspace'
-            git clone https://github.com/pramodkoppula/django-helloworld.git
+            //sh 'cd /var/www/JenkinsWorkspace'
+            //git clone https://github.com/pramodkoppula/django-helloworld.git
             //sh 'git log HEAD^..HEAD --pretty="%h %an - %s" > GIT_CHANGES'
             //def lastChanges = readFile('GIT_CHANGES')
             //slackSend color: "warning", message: "Started `${env.JOB_NAME}#${env.BUILD_NUMBER}`\n\n_The changes:_\n${lastChanges}"
