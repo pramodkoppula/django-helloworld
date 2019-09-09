@@ -1,6 +1,6 @@
 
 pipeline {
- Stages {      
+ stages {      
       
 agent {
     node {
