@@ -1,10 +1,10 @@
 pipeline {
-agent {
-    node {
+agent any{
+    //node {
         label 'my-defined-label'
         customWorkspace '/var/www/JenkinsWorkspace'
-    }
-        }
+    //}
+   }
  stages {      
   try {
         stage ('Checkout') {
