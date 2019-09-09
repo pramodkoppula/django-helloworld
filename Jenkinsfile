@@ -18,8 +18,8 @@ agent{
 	  }
          stage ('Test') {
 		 steps {
-            	sh "cd /var/www/NHSDPOC_CICD/NHSD_POC"
-		sh ". NHSD-env/bin/activate"
+            	//sh "cd /var/www/NHSDPOC_CICD/NHSD_POC"
+		sh "/var/www/NHSDPOC_CICD/NHSD_POC/NHSD-env/bin/activate"
 		}	
 	 }
 
