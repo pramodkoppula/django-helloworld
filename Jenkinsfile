@@ -17,10 +17,11 @@ agent{
 		}
 	  }
          stage ('Test') {
+		 steps {
             	sh "cd /var/www/NHSDPOC_CICD/NHSD_POC"
 		sh ". NHSD-env/bin/activate"
 		}	
-    
+	 }
 
 }
 }
