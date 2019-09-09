@@ -1,8 +1,9 @@
 
+pipeline {
 node {
         //label 'my-defined-label'
-        label 'label'
-        customWorkspace '/var/www/JenkinsWorkspace'
+        //label 'label'
+        //customWorkspace '/var/www/JenkinsWorkspace'
     try {
         stage 'Checkout'
             
@@ -23,4 +24,5 @@ node {
         throw err
     }
 
+}
 }
