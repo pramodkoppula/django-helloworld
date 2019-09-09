@@ -7,7 +7,7 @@ agent{
    }
  stages {      
           stage ('Checkout') {
-            //checkout scm
+            checkout scm
             //sh 'cd /var/www/JenkinsWorkspace'
             sh "git clone https://github.com/pramodkoppula/django-helloworld.git"
             //sh 'git log HEAD^..HEAD --pretty="%h %an - %s" > GIT_CHANGES'
