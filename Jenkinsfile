@@ -1,9 +1,13 @@
 
 pipeline {
-node {
-        //label 'my-defined-label'
-        //label 'label'
-        //customWorkspace '/var/www/JenkinsWorkspace'
+        
+agent {
+    node {
+        label 'my-defined-label'
+        customWorkspace '/some/other/path'
+    }
+        }
+        Stages {
     try {
         stage 'Checkout'
             
