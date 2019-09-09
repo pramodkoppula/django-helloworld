@@ -1,15 +1,13 @@
 
-pipeline {
- stages {      
-      
 agent {
     node {
         label 'my-defined-label'
         customWorkspace '/var/www/JenkinsWorkspace'
     }
         }
-        
-    try {
+pipeline {
+ stages {      
+  try {
         stage 'Checkout'
             
             //checkout scm
