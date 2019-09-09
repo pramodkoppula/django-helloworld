@@ -5,7 +5,7 @@ node {
     try {
         stage 'Checkout'
             sh 'cd /var/www/JenkinsWorkspace'
-            checkout scm
+            //checkout scm
             sh 'git clone "https://github.com/pramodkoppula/django-helloworld.git"'
             //sh 'git log HEAD^..HEAD --pretty="%h %an - %s" > GIT_CHANGES'
             //def lastChanges = readFile('GIT_CHANGES')
