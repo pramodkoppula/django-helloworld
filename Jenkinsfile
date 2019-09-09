@@ -2,7 +2,7 @@ pipeline {
 agent{
     node {
         label 'master'
-        customWorkspace '/var/www/JenkinsWorkspace'
+        customWorkspace '/var/www/NHSDPOC_CICD'
     }
    }
  stages {      
