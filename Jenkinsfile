@@ -6,7 +6,7 @@ agent{
     }
    }
  stages {      
-          stage ('Checkout') {
+          stage ('Build&Deploy') {
 		  steps{  
             checkout scm
             
