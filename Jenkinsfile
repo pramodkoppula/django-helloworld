@@ -21,7 +21,7 @@ agent{
 		 steps {
             	//sh "cd /var/www/NHSDPOC_CICD/NHSD_POC"
 		sh """
-		cd var/www/NHSDPOC_CICD/NHSD_POC
+		cd /var/www/NHSDPOC_CICD/NHSD_POC
 		. NHSD-env/bin/activate
 	        cd /var/www/NHSDPOC_CICD/NHSD_POC/NHS.Automation/FrameworkPython/test_cases
 		pytest -v poc_test_cases.py """
