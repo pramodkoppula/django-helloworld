@@ -24,7 +24,7 @@ agent{
 		cd /var/www/NHSDPOC_CICD/NHSD_POC
 		. NHSD-env/bin/activate
 	        cd /var/www/NHSDPOC_CICD/NHSD_POC/NHS.Automation/FrameworkPython/test_cases
-		pytest poc_test_cases.py --html=report.html"""
+		pytest -v poc_test_cases.py --html=/var/www/NHSDPOC_CICD/NHSD_POC/Automation_Report/report.html"""
 		}	
 	 }
 
